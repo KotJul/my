@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 7 Интернет магазин</title>
+  <style>
+    *{
+      margin: 0px;/*убираем все отступы*/
+      padding: 0px;
+    }
+    html{
+      scroll-behavior: smooth;/*добавляет плавный переход по меню*/
+    }
+    header{
+      margin: 40px 0px;
+      /*делает отступ сверху и снизу*/
+    }
+    header nav ul{
+      list-style: none;/* убираем точки перед меню*/
+      justify-content: end;/*поставят наши блоки в конец строки ли по правому краю*/
+      display: flex;/*превращает блочные элементы в резиновые, они стали в строку и заняли столько места сколько им нужно*/
+    }
+    header nav ul li{
+      margin-right: 15px;/*сделали отступ справа*/
+    }
+    header nav ul li a{
+      color: #000;
+      text-decoration: none;/*убираем подчеркивание*/
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 25px;/*высота строки*/
+     
+
+      border: 2px solid #000;/* рамка,толщина линии, вид(сплашная, прерывистая, двойная) линии,цвет линии*/
+      padding: 5px 10px;
+      border-radius: 20px;/*скругляет углы*/
+      display: block;
+      transition: all 0.3s;
+    }
+   
+    /*наведение*/
+    header nav ul li a:hover{
+      background: linear-gradient(45deg,rgb(100,25,69) 0%,rgb(163, 82, 170)50%,rgb(184, 161, 181)100%);
+      color:#fff;
+      transition: all 0.3s;/*задержка смены цвета при наведении*/
+    }
+    /*если нажать на ссылку кнопки меню и задержать*/
+    header nav ul li a:active{
+      background: rgb(133, 133, 133);
+      border: 2px solid rgb(228, 152, 152);
+    }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">О магазине</a>
+        </li>
+        <li>
+          <a href="#catalog">Каталог</a>
+        </li>
+        <li>
+          <a href="#delivery">Доставка</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about" style="height: 100vh;">
+    <h2>О магазине</h2>
+    </section>
+    <section id="catalog" style="height: 100vh;">
+      <h2>Каталог</h2>
+    </section>
+    <section id="delivery" style="height: 100vh;">
+      <h2>Доставка</h2>
+    </section>
+  </main>
+</body>
+</html>
