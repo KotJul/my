@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <!--подключили шрифты первые 3 строчки-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +14,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="container">
     <nav>
       <ul>
         <li>
@@ -26,27 +30,48 @@
     </nav>
   </header>
   <main>
-    <section id="about" style="height: 100vh;">
-      <h2>О магазине</h2>
-      <div class="product-card">
-        <div class="product-card_image">
-          <img src="https://content2.onliner.by/catalog/device/header/9a08e5f5400e508fb975bf697669c2b5.jpeg" alt="">
+    <section class="container catalog" id="catalog" >
+      <h2>Каталог</h2>
+      <div>
+        <div class="product-card">
+          <div class="product-card_image">
+            <img src="https://content2.onliner.by/catalog/device/header/9a08e5f5400e508fb975bf697669c2b5.jpeg" alt="">
+          </div>
+          <div class="product-card_info">
+            <div class="product-card_info_title">
+              <p>Ноутбук Apple Macbook Air 13" M1 2020 MGN63</p>
+              <p>2780,00 р.</p>
+            </div>
+            <div class="product-card_info-text">
+              <p>Краткая характеристика</p>
+            </div>
+            <div class="product-card_info-btn">
+              <a href="">Купить в 1 клик</a>
+            </div>
+          </div>
         </div>
-        <div class="product-card_info">
-          <div class="product-card_info_title">
-            <p>Ноутбук Apple Macbook Air 13" M1 2020 MGN63</p>
-            <p>2780,00 р.</p>
+        <!--вторая карточка товара-->
+        <div class="product-card">
+          <div class="product-card_image">
+            <img src="https://content2.onliner.by/catalog/device/header/9a08e5f5400e508fb975bf697669c2b5.jpeg" alt="">
           </div>
-          <div>
-          </div>
-          <div>
-            <p></p>
+          <div class="product-card_info">
+            <div class="product-card_info_title">
+              <p>Ноутбук Apple Macbook Air 13" M1 2020 MGN63</p>
+              <p>2780,00 р.</p>
+            </div>
+            <div class="product-card_info-text">
+              <p>Краткая характеристика</p>
+            </div>
+            <div class="product-card_info-btn">
+              <a href="">Купить в 1 клик</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="catalog" style="height: 100vh;">
-      <h2>Каталог</h2>
+    <section id="about" style="height: 100vh;">
+      <h2>О магазине</h2>
     </section>
     <section id="delivery" style="height: 100vh;">
       <h2>Доставка</h2>

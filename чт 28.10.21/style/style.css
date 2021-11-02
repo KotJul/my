@@ -2,6 +2,11 @@
     margin: 0px;/*убираем все отступы*/
     padding: 0px;
   }
+  /*подключили шрифты с сайта*/
+  body{
+  font-family: 'Roboto', sans-serif;
+  background: #ebf3f7; /*цвет заднего фона для всего боди*/
+  }
   html{
     scroll-behavior: smooth;/*добавляет плавный переход по меню*/
   }
@@ -45,13 +50,76 @@
   }
   .product-card{
     display: flex;
-    width: 900px;
+    margin: 20px;
   }
   .product-card_info{
     width: 100%;
+
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;/*ввыстраивает блоки в колонку*/
   }
   .product-card_info_title{
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
   }
-  
+  /*задаем размер картинки*/
+  .product-card_image{
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    box-sizing: border-box;/*учитывает всю обводку в ширину*/
+    padding: 10px;
+
+    display: flex;/*выстраивает блоки в строчку*/
+    align-items: center ; /*выравнивает относительно горизонтальной оси*/
+  }
+  /*макимальная высота и ширина займет все необходимое место*/
+  .product-card_image img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .product-card_info-btn{
+    margin-top: auto;/*задает автоматический отступ, когда есть место куда отступать*/
+    display: flex;
+    justify-content: end;/*размещает блок в конце*/
+  }
+  .product-card_info-btn a{
+    display: block;
+    background: rgb(168, 168, 228);
+    text-decoration: none;
+    padding: 5px 10px;/*отступ от текста*/
+    border: 2px solid black;
+
+    font-size: 21px;
+    font-weight: bold;
+    color: #000;
+    border-radius: 20px;
+  }
+  .product-card_info-btn a:hover{
+    background: rgb(190, 136, 218);
+    color:white;
+    transition:  0.3s;
+  }
+  .product-card_info-text{
+    color: grey;
+    font-size: 16px;
+  }
+  .container{
+    width: 1000px;
+    margin: 0px auto;
+  }
+  .catalog{
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;/*учитывает и падинг и бордер*/
+    box-shadow: 10px 10px 20px rgba(0, 0,0,0.5);/* ось х, ось у, радиус размытия, тень*/
+    transition: box-shadow 0.5s;/*чтобы плавно тень вернулась обратно*/
+  }
+  .catalog:hover{
+    transition: box-shadow 0.5s;
+    box-shadow: 10px 10px 40px rgba(0, 0,0,0.5);
+
+  }
